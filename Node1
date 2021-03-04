@@ -1,0 +1,8 @@
+============== BAI 1 ======================
+npm init
+	-> Tao file json luu tru cac thong tin co ban cua project.
+	
+npm install express --save
+	+) --save: la de luu lai module express vao trong file package.json duoi 1 cai key la 'dependencies'
+	
+
