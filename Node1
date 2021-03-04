@@ -5,4 +5,16 @@ npm init
 npm install express --save
 	+) --save: la de luu lai module express vao trong file package.json duoi 1 cai key la 'dependencies'
 	
+============== BAI 2 ======================
+SPA - Single Page Application : web dong
+	+) Noi dung duoc render phia front-end.
+	+) Khong load lai toan bo trang.
+	+) Tuong tac thong qua JSON API.
 
+Template engines: file hien thi ra man hinh.
+	+) Pug (co ban nhat)
+	+) Mus
+	+) ejs
+	
+npm install pug --save
+	-> Cai dat va nhung Pug vao trong project.
