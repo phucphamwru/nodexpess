@@ -18,3 +18,19 @@ Template engines: file hien thi ra man hinh.
 	
 npm install pug --save
 	-> Cai dat va nhung Pug vao trong project.
+	
+=============== BAI 3 ======================
+Query Parameters
+B1: Nhap thong tin can tim
+B2: Lay thong tin do gui len server qua method GET
+B3: Kiem tra va so sanh gia tri query voi cai can tim.
+B4: Render va tra ve ket qua ra man hinh.
+	
+	
+	
+	
+	
+	
+	
+	
+	
