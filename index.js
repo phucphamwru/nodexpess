@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
+const shortid = require('shortid');
 
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
@@ -23,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));	//for parsing application/x-
 // 	{ id : 3, name:'Nam'}
 // ];
 
-// db.get('/users').value()		-> 
+// db.get('<key>').value()		->  lay ra gia tri cua bang(key)
 
 app.get('/', (req, res) => {
   res.render('index', {
@@ -53,8 +54,18 @@ app.get('/users/create', (req, res) => {
 });
 
 app.post('/users/create', (req, res) => {
+	req.body.id = shortid.generate();
 	db.get("users").push(req.body).write();
 	res.redirect('/users');
+});
+
+app.get('/users/:id', (req,res) => {	//:id la Route Parameter - 1 tham so gi do
+	var id = req.params.id;
+	var user = db.get('users').find({id: id}).value();
+	console.log(user)
+	res.render('users/view',{
+		user: user
+	});
 });
 
 app.listen(port, () => {
