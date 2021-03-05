@@ -50,6 +50,20 @@ npm install --save-dev nodemon
 	
 	
 	
-	
-	
+=============== BAI 6 ======================
+LowDB: co so du lieu sieu don gian luu tru du lieu duoi dang JSON.
+
+npm install lowdb
+
+//goi lowdb va tro duong truyen den
+const low = require('lowdb')	// goi lowdb ra su dung.
+const FileSync = require('lowdb/adapters/FileSync')
+
+const adapter = new FileSync('db.json') //tro den databast db.json.
+const db = low(adapter)	// bien dai dien cua db trong code js.
+
+db.defaults({ users: [] }).write(); //dat mac dinh cho users khi chua co du lieu.
+
+// them file nay de khi du lieu trong db thay doi thi nodemon khong phai restart lai nhieu lan.
+
 	

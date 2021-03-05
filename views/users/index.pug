@@ -7,5 +7,5 @@ form(action="/users/search", method="GET")
 	button Search
 
 ul
-	each use in users
-		li=use.name
+	each user in users
+		li= user.name
