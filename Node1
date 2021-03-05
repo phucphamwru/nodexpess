@@ -86,3 +86,15 @@ req.params: { "userId": "34", "bookId": "8989" }
 		
 ShortId: tao ID ngau nhien
 npm install shortid --save
+
+
+
+
+
+
+
+
+
+
+
+
