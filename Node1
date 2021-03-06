@@ -88,11 +88,18 @@ ShortId: tao ID ngau nhien
 npm install shortid --save
 
 
+=============== BAI 8-9 ======================
+Route: noi chua cac link url lien ket.
+MVC: model - view - controller.
+	+) Model: noi luu tru du lieu (db.json)
+	+) View: noi xu ly cac tac vu ben phia client.
+	+) Controller: noi xu ly cac tac vu logic ben phia server.
+	
 
+=============== BAI 10 ======================
+Template Layout: giao dien man hinh.
 
-
-
-
+Bootstrap: framework css va js
 
 
 
