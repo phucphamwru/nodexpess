@@ -1,11 +1,13 @@
 const express = require('express')
 const shortid = require('shortid');
 const db = require('../db');
+var cookieParser = require('cookie-parser')
 
 
 // db.get('<key>').value()		->  lay ra gia tri cua bang(key)
 
 module.exports.index = (req, res) => {
+	console.log(req.cookies)
   res.render('users/index', {
   	users: db.get("users").value()
   });

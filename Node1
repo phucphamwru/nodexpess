@@ -114,3 +114,16 @@ function Middleware('..link..', func1, func2) {	//func1 chay xong -> thi func2 m
 	...
 }
 
+
+=============== BAI 14 ======================
+Cookie: duoc luu o brower.
+	+) Khi request den 1 server -> thi Server response kem theo cookie.
+	+) Cookie duoc luu lai ben phia Client.
+	+) Lan 2 client request den server thi gui kem theo cookie.
+
+npm install cookie-parser : de su dung lay gia tri cookie.
+
+
+
+
+
