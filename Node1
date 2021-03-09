@@ -124,6 +124,19 @@ Cookie: duoc luu o brower.
 npm install cookie-parser : de su dung lay gia tri cookie.
 
 
+=============== BAI 15 ======================
+Authenticatioin: xac thuc.
+
+Xac thuc tai khoan va mat khau truoc khi login vao server de truy cap den cac muc khac.
++) Xac thuc Cookies, tai khoan, mat khau, ... -> truoc khi vao he thong.
 
 
+=============== BAI 16 ======================
+md5: 'ma hoa' password
+
+npm install md5 --save
+	-> de nhung thu vien md5 vao project.
+su dung: 
+	var md5 = require('md5');
+	md5(message)	-> ma hoa 'message'
 
