@@ -140,3 +140,18 @@ su dung:
 	var md5 = require('md5');
 	md5(message)	-> ma hoa 'message'
 
+
+=============== BAI 17 ======================
+Signed Cookie: dam bao gia tri cookie khong bi thay doi.
+
+res.locals	: chi ton tai o vong doi req-res do thoi.
+		(nghia la trong 1 cau lenh gui di - tra ve).
+
++) req.signedCookies.userId
++) app.use(cookieParser("secret"))
++) res.cookie('userId', user.id, {
+		signed: true
+	});
+
+
+

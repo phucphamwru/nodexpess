@@ -1,6 +1,8 @@
 const express = require('express')
 const db = require('../db');
 var md5 = require('md5');
+var cookieParser = require('cookie-parser')
+
 
 module.exports.login = (req, res) => {
 	res.render('auth/login')
@@ -24,7 +26,6 @@ module.exports.postLogin = (req, res) => {
 	}
 
 	hashedPassword = md5(password)
-	console.log(hashedPassword)
 	if (user.password !== hashedPassword) {
 		res.render('auth/login', {
 			errors: [
@@ -34,7 +35,9 @@ module.exports.postLogin = (req, res) => {
 		});
 		return;
 	}
-
-	res.cookie('userId', user.id);
+	console.log('den day roi3')
+	res.cookie('userId', user.id, {
+		signed: true
+	});
 	res.redirect("/users");
 }
