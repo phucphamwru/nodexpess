@@ -1,3 +1,5 @@
+require('dotenv').config() //bien moi truong .env de tren dau cang som cang tot.
+
 const express = require('express')
 
 const bodyParser = require('body-parser');
@@ -13,7 +15,7 @@ const port = 3000
 app.use(bodyParser.json());	//for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));	//for parsing application/x-www-form-urlencoded
 
-app.use(cookieParser("secret"))
+app.use(cookieParser("secret")) //process.env.SESSION_SECRET
 
 app.set('views', './views')
 app.set('view engine', 'pug')

@@ -154,4 +154,14 @@ res.locals	: chi ton tai o vong doi req-res do thoi.
 	});
 
 
+=============== BAI 18 ======================
+Environment Variables: moi truong.
+1. Dev Enviroment	- chay tren local.
+2. Staging Enviroment	- de cho moi nguoi trong project co the nhin thay.
+3. Production Enviroment	- cho moi nguoi dung.
+
+npm install dotenv --save
+
+goi file env cang som cang tot -> de o dau chuong trinh.
+
 
