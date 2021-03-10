@@ -165,3 +165,30 @@ npm install dotenv --save
 goi file env cang som cang tot -> de o dau chuong trinh.
 
 
+=============== BAI 19 ======================
+Debug: diet bo - sua loi.
+	+) Bug: bo hay loi.
+
+Them: --inspect vao trong nodemon o file package.js
+	-> Khi start chuong trinh thi debug o chrome (hinh thoi).
+	
+	
+=============== BAI 20 ======================
+Pagination: Phan trang.
+	+) views/products/index.pug
+	+) routes/product.route.js
+	+) controllers/product.controller.js
+
+Co: n la so Page thu n, x la phan tu trong 1 page.
+	begin = (n-1)*x
+	end = (n-1)*x+x = n*x
+	Items = array.slice(begin, end) //begin -> end-1
+
+Mockaroo: tao db mau.
+
+Tu tim hieu: thu vien Lodash - dung nhieu khi di lam.
+
+
+
+
+
