@@ -189,6 +189,35 @@ Mockaroo: tao db mau.
 Tu tim hieu: thu vien Lodash - dung nhieu khi di lam.
 
 
+=============== BAI 21 ======================
+File Upload: 
+
++)enctype
++)multer: giup doc du lieu tu request. (nhu tep anh, file da dung)
++)upload: thu muc chua cac file anh.
+	var upload = multer({dest: './public/upload'});
+
+
+=============== BAI 22 ======================
+Session: duoc luu ben phia server.
+	+) ung dung khi nguoi dung khong phai dang nhap.
+	+) duoc ung dung tao gio hang, de luu tru cac id cua san pham.
+
+Hoat dong:
+	1. Kiem tra SessionId.
+		- Ton tai thi next().
+		- Khong ton tai thi:
+			+) tao SessionId va luu lai tam thoi trong CSDL.
+			+) gui SessionId ve phia nguoi dung.
+	2. Moi khi User thuc hien 1 thao tac can luu tru thi goi kem theo session.
+	3. Luu tru cac san pham can cho vao gio hang:
+		- Su dung productId de luu tru san pham.
+		- Them so luong lua chon san pham de luu tru.
+
+Cookie: duoc luu ben phia client.
+	+) ung dung khi nguoi dung khong phai dang nhap lai nhieu lan.
+	+) server se kiem tra cookie user khi truy cap den 1 chuc nang hay tac vu bat ki.
+
 
 
 

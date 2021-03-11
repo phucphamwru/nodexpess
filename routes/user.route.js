@@ -1,9 +1,11 @@
 var express = require('express')
+var multer = require('multer')
 
 var controller = require('../controllers/user.controller')
 var validate = require('../validate/user.validate')
 
-var router = express.Router()
+var upload = multer({ dest: './public/uploads'});
+var router = express.Router();
 
 router.get('/', controller.index);	//authMiddleware.requireAuth
 
@@ -16,7 +18,7 @@ router.get('/search', controller.search);
 
 router.get('/create', controller.create);
 
-router.post('/create', validate.createPost, controller.createPost);
+router.post('/create', upload.single('avatar'), validate.createPost, controller.createPost);
 
 router.get('/:id', controller.get);
 

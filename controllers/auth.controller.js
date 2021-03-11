@@ -35,7 +35,7 @@ module.exports.postLogin = (req, res) => {
 		});
 		return;
 	}
-	console.log('den day roi3')
+	
 	res.cookie('userId', user.id, {
 		signed: true
 	});
