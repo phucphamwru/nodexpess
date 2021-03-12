@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
+const mongoose = require('mongoose');
 
 var userRoute = require('./routes/user.route');
 var authRoute = require('./routes/auth.route');
@@ -15,6 +16,7 @@ var cartRoute = require('./routes/cart.route');
 const app = express()
 const port = 3000
 
+mongoose.connect('mongodb://localhost/express-demo');
 
 app.use(bodyParser.json());	//for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));	//for parsing application/x-www-form-urlencoded

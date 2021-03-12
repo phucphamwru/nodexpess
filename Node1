@@ -219,5 +219,47 @@ Cookie: duoc luu ben phia client.
 	+) server se kiem tra cookie user khi truy cap den 1 chuc nang hay tac vu bat ki.
 
 
+=============== BAI 23 ======================
+CSRF Attack (Cross-site request forgery)
+
+Ung dung: hack chuyen tien. - gia mao form chuyen tien.
+*Transfer money form (form chuyen tien)
+
++) Attacker: hacker mu den.
++) Victim: nguoi bi hack.
+
+
+=============== BAI 24 ======================
+MongDB:
+mongo				(de start)
+> show databases;
+	Hien thi cac database hien co.
+	
+> use express-demo; 		(use database)
+	Truy cap den database can truy van.
+	
+> show collectionis;
+	Hien thi thong tin cac collection (<=> nhu 1 bang trong SQL)
+>^C
+
+
+Robo3T
+-Create: tao lien ket (collect).
+	+)Name: Localhost
+	+)Address: localhost	port:27017
+	
+-Create Database:
+	+)Database Name: express-demo
+		Collection: <=> key ("users", "products", "session") trong db.json
+			click right -> insert Doc... -> import "key" : "value"
+			
+			
+=============== BAI 25 ======================
+Mongoose: thu vien cua MongoDB
+Tro den thu muc chua project -> npm install mongoose --save
+Thay the lowdb -> Mongodb
+
+
++) mongoose.schema({...})	: dung de khai bao cac kieu du lieu cua key.
 
 
