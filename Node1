@@ -263,3 +263,23 @@ Thay the lowdb -> Mongodb
 +) mongoose.schema({...})	: dung de khai bao cac kieu du lieu cua key.
 
 
+
+
+=============== BAI 26 ======================
+API : Application Programming Interface (ung dung vs ung dung)
+GUI : Graphuc User Interface		(nguoi dung vs ung dung)
+CLI: Command Line Interface		(giao dien dong lenh)		
+
+HTTP API:
+- tra ve 2 dang chinh la: XML hoac JSON.
+- su dung Postman de test API.
+
+
+
+
+
+
+
+
+
+
