@@ -275,8 +275,19 @@ HTTP API:
 - su dung Postman de test API.
 
 
+=============== BAI 27 ======================
+REST API: su dung giao thuc HTTP.
+1 so method chuan:
+	+) GET		/products	-> Get all products []
+	+) GET		/products/:id	-> Get one products {}
+	+) POST	/products	-> Create product
+	+) PUT		/products/:id	-> thay doi product (Replace/Create)
+	+) PATCH	/products/:id	-> update product   (Update)
+	+) DELETE	/products/:id	-> xoa product	(Delete)
 
 
+Authentiocation Header (JWT)	: lam authentication khi REST API.
+	(thay the cho cookie)
 
 
 
